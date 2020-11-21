@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import Nav from "./component/Nav/Nav";
+import Landing from "./component/Landing";
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  useHistory,
+} from "react-router-dom";
+import About from "./component/Routing/About";
+import Resume from "./component/Routing/Resume";
+
+import "./App.css";
+import { useEffect } from "react";
 
 function App() {
+  const history = useHistory();
+
+  console.log("listen");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Nav />
+        <div className="hashes">
+          <Switch>
+            <Route exact path="/about" component={About}></Route>
+            <Route exact path="/resume" component={Resume}></Route>
+            <Route component={Landing}></Route>
+          </Switch>
+        </div>
+      </div>
+    </Router>
   );
 }
 
