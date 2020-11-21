@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 //Animate text
 export const textIntro = (elem) => {
   gsap.from(elem, {
