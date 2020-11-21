@@ -1,7 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import styles from "../../styles/Nav.module.css";
-import portrait from "../../img/portrait.webp";
+import portrait from "../../img/portrait.jpg";
+// import portrait from "../../img/portrait.webp";
 
 const Nav = () => {
   const [active, setActive] = useState("/");
