@@ -1,5 +1,6 @@
 .App {
   display: flex;
+  min-height: 100vh;
 }
 .hashes {
   flex: 1;
@@ -13,6 +14,7 @@
   color: white;
   filter: brightness(0.9);
   overflow: hidden;
+  padding: 2rem 0;
 }
 .typeWritterWrapper {
   font-size: 3.6rem;
@@ -26,4 +28,23 @@
 }
 #active {
   color: rgb(22, 186, 149);
+}
+.open {
+  height: 40rem;
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 599px) {
+  .typeWritterWrapper {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .typeWritterWrapper {
+    font-size: 1.8rem;
+  }
 }

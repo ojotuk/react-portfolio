@@ -15,7 +15,7 @@ const Landing = ({ match }) => {
       <h1>Welcome</h1>
       <TypeWritterText />
       <p>based in lagos Nigeria</p>
-      <Link>Hire Me</Link>
+      <Link to="/">Hire Me</Link>
     </div>
   );
 };

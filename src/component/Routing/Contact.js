@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from "react";
-import styles from "../../styles/Resume.module.css";
-import { fromTop } from "../Animate";
-const Resume = () => {
+import styles from "../../styles/Contact.module.css";
+import { fromBottom } from "../Animate";
+
+const Contact = () => {
   let elem = useRef(null);
   useEffect(() => {
-    fromTop(elem);
+    fromBottom(elem);
   });
   return (
     <div className={styles.wrapper} ref={(el) => (elem = el)}>
-      resume
+      Contact
     </div>
   );
 };
 
-export default Resume;
+export default Contact;

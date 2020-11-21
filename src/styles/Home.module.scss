@@ -9,6 +9,7 @@ $themeColor: rgb(22, 186, 149);
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
   h1 {
     font-size: 2rem;
     margin-bottom: 2rem;
@@ -29,4 +30,6 @@ $themeColor: rgb(22, 186, 149);
       background-color: $themeColor;
     }
   }
+}
+@media screen and (max-width: 900px) {
 }

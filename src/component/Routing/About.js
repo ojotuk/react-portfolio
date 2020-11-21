@@ -4,7 +4,6 @@ import { fromRight } from "../../component/Animate";
 import { NavLink } from "react-router-dom";
 
 const About = ({ match }) => {
-  sessionStorage.setItem("active", match.url);
   let elem = useRef(null);
   useEffect(() => {
     fromRight(elem);
@@ -42,10 +41,17 @@ const About = ({ match }) => {
               <span>Lagos, Nigeria</span>
             </div>
             <div>
+              <span>Phone:</span>
+              <span>+2347069452633</span>
+            </div>
+            <div>
               <span>Email:</span>
               <span>ojotuk14@gmail.com</span>
             </div>
-            <button>Download Resume</button>
+            <button>
+              <i class="fa fa-cloud-download" aria-hidden="true"></i>Download
+              Resume
+            </button>
           </div>
         </div>
       </div>
