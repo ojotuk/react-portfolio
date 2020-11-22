@@ -1,15 +1,13 @@
 import React, { useEffect, useRef } from "react";
 import styles from "../../styles/Resume.module.css";
 import { fromTop } from "../Animate";
+
+import Layout from "../Layout";
 const Resume = () => {
-  let elem = useRef(null);
-  useEffect(() => {
-    fromTop(elem);
-  });
   return (
-    <div className={styles.wrapper} ref={(el) => (elem = el)}>
-      resume
-    </div>
+    <Layout title="Resume" animation={fromTop} caption="summary">
+      this is a child
+    </Layout>
   );
 };
 

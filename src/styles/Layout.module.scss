@@ -1,3 +1,4 @@
+$bgColor: #172024;
 $wrapperColor: #525468;
 $themeColor: rgb(22, 186, 149);
 $bodyText: #525468;
@@ -11,17 +12,44 @@ $bodyText: #525468;
   padding: 1rem;
   position: relative;
   overflow: auto;
-  padding: 5rem 0;
-  color: black;
-
+  padding: 5rem 2rem 2rem 2rem;
   .innerWrapper {
-    width: 96%;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
     height: 100%;
-    margin: 0 auto;
-    background-color: red;
-    font-size: 1.8rem;
+    // background-color: red;
     overflow: auto;
-    // scroll
+    position: relative;
+    .heading {
+      color: #121212;
+      font-size: 2rem;
+      &::after {
+        content: "";
+        display: block;
+        height: 0.3rem;
+        background-color: $themeColor;
+        margin-top: 0.3rem;
+      }
+    }
+    .caption {
+      position: absolute;
+      color: #eeeeee;
+      font-size: 5rem;
+      text-transform: uppercase;
+      top: -2rem;
+      z-index: -1;
+      opacity: 0.5;
+      font-weight: 600;
+    }
+    .children {
+      color: #121212;
+      padding: 5rem 0 1rem 0;
+      width: 100%;
+      height: 100%;
+      font-size: 2rem;
+    }
     &::-webkit-scrollbar {
       width: 0.5rem;
     }
@@ -67,5 +95,15 @@ $bodyText: #525468;
     justify-content: flex-end;
     padding: 1rem;
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start !important;
+    .form {
+      margin-top: 2rem;
+    }
   }
 }

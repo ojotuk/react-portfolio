@@ -15,19 +15,21 @@ const About = ({ match }) => {
         <div className={styles.intro}>
           <div className={styles.description}>
             <h3 className={styles.title}>
-              I'm <span>Kazeem A. Ojotu</span>, a Fullstack Developer
+              I'm <span>Kazeem A. Ojotu</span>, a Fullstack Developer &amp;
+              Product Manager.
             </h3>
             <div className={styles.details}>
               <p>
-                Cras ultricies ligula sed magna dictum porta. Praesent sapien
-                massa, convallis a pellentesque nec, egestas non nisi. Curabitur
-                arcu erat, accumsan id imperdiet et, porttitor at sem. Vivamus
-                magna justo, lacinia eget consectetur sed, convallis at tellus.
+                A graduate of Physics/Electronic at first degree (B.Tech) and
+                Physics at post graduate level (Msc.). I have passion for
+                programming on the web viz. turning designs into clean and
+                scalable codes. I am solution driven, analytical and result
+                oriented
               </p>
               <p>
-                Nulla porttitor accumsan tincidunt. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Praesent sapien massa, convallis a
-                pellentesque nec, egestas non nisi.
+                I have attended programs/bootcamps organized by top tech
+                companies like Andela, Google,Plural Sight, Decagon and Cloud10
+                Tech Hub.
               </p>
             </div>
           </div>

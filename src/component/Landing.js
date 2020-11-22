@@ -12,7 +12,7 @@ const Landing = ({ match }) => {
   });
   return (
     <div className={styles.home} ref={(el) => (text = el)}>
-      <h1>Welcome</h1>
+      <h1>Hi,</h1>
       <TypeWritterText />
       <p>based in lagos Nigeria</p>
       <Link to="/">Hire Me</Link>
