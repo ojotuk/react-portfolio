@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import styles from "../../styles/Contact.module.css";
+import React from "react";
+
 import { fromBottom } from "../Animate";
 import Layout from "../Layout";
 

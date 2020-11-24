@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import styles from "../../styles/Resume.module.css";
 import { fromTop } from "../Animate";
 

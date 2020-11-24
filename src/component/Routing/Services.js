@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import styles from "../../styles/Services.module.css";
+import React from "react";
+
 import { fromLeft } from "../Animate";
 import Layout from "../Layout";
 
