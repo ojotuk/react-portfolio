@@ -2,70 +2,63 @@ $wrapperColor: #525468;
 $themeColor: rgb(22, 186, 149);
 $bodyText: #525468;
 
-.wrapper {
-  width: 90%;
-  height: 90%;
-  max-height: 90rem;
-  background-color: white;
-  margin: auto;
-  padding: 1rem;
-  position: relative;
-  overflow: auto;
-  padding: 5rem 0;
-  color: black;
-
-  .innerWrapper {
-    width: 96%;
-    height: 100%;
-    margin: 0 auto;
-    background-color: red;
+.contentWrapper {
+  width: 100%;
+  //   background-color: yellow;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  .content {
     font-size: 1.8rem;
-    overflow: auto;
-    // scroll
-    &::-webkit-scrollbar {
-      width: 0.5rem;
+    .type {
+      margin-bottom: 1rem;
+      color: rgba($color: #000000, $alpha: 0.5);
+      font-weight: 500;
+      &::after {
+        content: "";
+        height: 0.2rem;
+        width: 2rem;
+        background-color: $themeColor;
+        display: block;
+      }
     }
-    &::-webkit-scrollbar-track {
-      background: #f7f7f7;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: $themeColor;
-      border-radius: 5px !important;
-    }
-  }
-  .borderRight {
-    position: absolute;
-    width: 10rem;
-    height: 5rem;
-    // background-color: black;
-    border-top: 0.3rem solid $themeColor;
-    border-right: 0.3rem solid $themeColor;
-    top: 1rem;
-    right: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-    font-size: 2rem;
-    a {
-      text-decoration: none;
-      transition: 0.5s;
-      &:hover {
-        color: red;
+    .description {
+      margin-top: 3rem;
+      //   background-color: red;
+      border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
+      padding-left: 1rem;
+      &:nth-child(1) {
+        margin-top: 0;
+        background-color: red !important;
+      }
+      span {
+        background-color: $themeColor;
+        color: white;
+        padding: 0.2rem 1.5rem;
+      }
+      h6 {
+        margin: 1rem 0;
+        font-size: 1.8rem;
+        a {
+          text-decoration: none;
+          color: #000000;
+          transition: 0.3s;
+          &:hover {
+            color: rgba($color: #000000, $alpha: 0.5);
+          }
+        }
+      }
+      p {
+        font-size: 1.6rem;
       }
     }
   }
-  .borderLeft {
-    position: absolute;
-    width: 10rem;
-    height: 5rem;
-    // background-color: black;
-    border-top: 0.3rem solid $themeColor;
-    border-left: 0.3rem solid $themeColor;
-    top: 1rem;
-    left: 1rem;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1rem;
-    font-size: 2rem;
+  .education {
+    // background-color: #525468;
+  }
+  .courses {
+    grid-column: 3/4;
+    grid-row: 1/4;
   }
 }
